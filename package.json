@@ -4,7 +4,7 @@
   "description": "A node backend service for expose rich and useful mocks to your application",
   "main": "src/index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,11 +25,15 @@
   },
   "homepage": "https://github.com/danigar/mockend#readme",
   "devDependencies": {
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "jest": "^22.0.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "koa": "^2.4.1"
   }
 }
