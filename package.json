@@ -1,0 +1,35 @@
+{
+  "name": "mockend",
+  "version": "0.0.1",
+  "description": "A node backend service for expose rich and useful mocks to your application",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigar/mockend.git"
+  },
+  "keywords": [
+    "mock",
+    "mocks",
+    "json",
+    "mock-server",
+    "server",
+    "backend"
+  ],
+  "author": "daniel@etereo.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigar/mockend/issues"
+  },
+  "homepage": "https://github.com/danigar/mockend#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
