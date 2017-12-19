@@ -4,7 +4,8 @@
   "description": "A node backend service for expose rich and useful mocks to your application",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src test"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,19 @@
   },
   "homepage": "https://github.com/danigar/mockend#readme",
   "devDependencies": {
+    "babel-eslint": "^8.0.3",
     "cz-conventional-changelog": "^2.1.0",
-    "jest": "^22.0.0"
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.0.0",
+    "pre-commit": "^1.2.2"
   },
   "config": {
     "commitizen": {
@@ -35,5 +47,8 @@
   },
   "dependencies": {
     "koa": "^2.4.1"
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }

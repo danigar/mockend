@@ -1,0 +1,25 @@
+# Support ES2016 features
+parser: babel-eslint
+
+extends: airbnb
+
+env:
+  node: true
+  jest: true
+
+globals:
+  test: true
+  expect: true
+
+rules:
+  arrow-parens: [2, as-needed]
+  eqeqeq: 0
+  no-return-assign: 0 # fails for arrow functions
+  no-var: 2
+  semi: [error, never]
+  space-before-function-paren: [error, always]
+  yoda: 0
+  arrow-spacing: 2
+  dot-location: [2, "property"]
+  prefer-arrow-callback: 2
+  import/newline-after-import: never
