@@ -1,8 +1,8 @@
 const Koa = require('koa')
 const app = new Koa()
 
-const greet = function () {
-return 'Hello!'
+function greet () {
+  return 'Hello!'
 }
 
 // response
